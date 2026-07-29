@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karang Taruna Tunas Muda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon"></span>
+        <span>Katar<strong class="text-primary">TunasMuda</strong></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#statistik">Tentang</a>
+        <a href="#anggota">Pengurus</a>
+        <a href="#kegiatan">Kegiatan</a>
+        <a href="#kontak" class="btn-nav">Hubungi Kami</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="beranda">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="badge">Pemuda Berdaya & Inovatif</span>
+      <h1>Wadah Kreativitas & Generasi Mandiri</h1>
+      <p>Mewujudkan lingkungan masyarakat yang aktif, solid, dan berdaya saing bersama Karang Taruna Tunas Muda.</p>
+      <div class="hero-buttons">
+        <a href="#kegiatan" class="btn btn-primary">Lihat Kegiatan</a>
+        <a href="#anggota" class="btn btn-outline">Daftar Pengurus</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section" id="statistik">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <h3>50+</h3>
+        <p>Anggota Aktif</p>
+      </div>
+      <div class="stat-card">
+        <h3>12+</h3>
+        <p>Program Kerja / Tahun</p>
+      </div>
+      <div class="stat-card">
+        <h3>4</h3>
+        <p>Wilayah RT Terjangkau</p>
+      </div>
+      <div class="stat-card">
+        <h3>100%</h3>
+        <p>Semangat Gotong Royong</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="anggota">
+    <div class="container">
+      <div class="section-header">
+        <h2>Daftar Pengurus & Anggota</h2>
+        <p>Struktur kepengurusan Karang Taruna Tunas Muda periode aktif.</p>
+      </div>
+      
+      <div class="search-container">
+        <input type="text" id="searchInput" onkeyup="cariAnggota()" placeholder="🔍 Cari nama, jabatan, atau RT...">
+      </div>
+
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 60px;">No</th>
+              <th>Nama Lengkap</th>
+              <th>Jabatan</th>
+              <th>Wilayah</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="tabelAnggota">
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-light" id="kegiatan">
+    <div class="container">
+      <div class="section-header">
+        <h2>Program Kerja & Kegiatan</h2>
+        <p>Berbagai agenda positif yang rutin kami laksanakan untuk masyarakat.</p>
+      </div>
+
+      <div class="grid-kegiatan">
+        <div class="card-kegiatan">
+          <div class="card-tag tag-green">Lingkungan</div>
+          <h3>Kerja Bakti & Penghijauan</h3>
+          <p>Aksi gotong royong membersihkan fasos/fasum serta penanaman bibit pohon di lingkungan warga.</p>
+          <div class="card-footer">
+            <span>📅 Setiap Minggu I</span>
+          </div>
+        </div>
+
+        <div class="card-kegiatan">
+          <div class="card-tag tag-blue">Event Utama</div>
+          <h3>Peringatan HUT RI</h3>
+          <p>Penyelenggaraan aneka perlombaan rakyat, jalan sehat keluarga, dan panggung pentas seni pemuda.</p>
+          <div class="card-footer">
+            <span>📅 Bulan Agustus</span>
+          </div>
+        </div>
+
+        <div class="card-kegiatan">
+          <div class="card-tag tag-orange">Olahraga</div>
+          <h3>Turnamen Olahraga Pemuda</h3>
+          <p>Latihan rutin dan kompetisi persahabatan bulutangkis, sepak bola, serta voli antar-RT.</p>
+          <div class="card-footer">
+            <span>📅 Akhir Pekan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="kontak">
+    <div class="container">
+      <div class="section-header">
+        <h2>Hubungi Kami</h2>
+        <p>Punya pertanyaan atau ingin berkolaborasi? Jangan ragu untuk menghubungi kami.</p>
+      </div>
+
+      <div class="kontak-grid">
+        <div class="kontak-card">
+          <div class="kontak-icon">📍</div>
+          <h4>Sekretariat</h4>
+          <p>Balai Desa / Gedung Serbaguna RW 03, Jl. Pemuda No. 12</p>
+        </div>
+        <div class="kontak-card">
+          <div class="kontak-icon">💬</div>
+          <h4>WhatsApp</h4>
+          <p>+62 812-3456-7890 (Humas)</p>
+        </div>
+        <div class="kontak-card">
+          <div class="kontak-icon">📸</div>
+          <h4>Instagram</h4>
+          <p>@karangtaruna_tunasmuda</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Karang Taruna Tunas Muda. Dikelola oleh Divisi Humas & Teknologi.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
